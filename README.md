@@ -6,10 +6,23 @@ This repo provides a basic example of designing a RESTful API using Flask.
 
 
 ## Directory Structure
-├── models
-│   └── item.py
-├── routes
-│   └── item_routes.py
+
+.
+├── app
+│   ├── models
+│   │   └── item.py
+│   │   └── user.py
+│   ├── routes
+│   │   ├── __init__.py
+│   │   ├── item_routes.py
+│   │   └── auth_routes.py
+│   ├── util
+│   │   ├── errors.py
+│   │   └── decorators.py
+│   ├── config.py
+│   └── extensions.py
+├── migrations
+├── manage.py
 ├── app.py
 ├── requirements.txt
 └── README.md
