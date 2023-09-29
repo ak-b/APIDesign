@@ -4,8 +4,24 @@
 
 This repo provides a basic example of designing a RESTful API using Flask.
 
-## Installation
 
+## Directory Structure
+├── models
+│   └── item.py
+├── routes
+│   └── item_routes.py
+├── app.py
+├── requirements.txt
+└── README.md
+
+## API routes
+GET /items: Fetch all items.
+POST /items: Create a new item.
+GET /items/<int:id>: Fetch a specific item by ID.
+PUT /items/<int:id>: Update a specific item by ID.
+DELETE /items/<int:id>: Delete a specific item by ID.
+
+## Installation
 1. Clone the repository:
 ```bash
 git clone https://github.com/ak-b/flask-api-design.git
@@ -21,9 +37,4 @@ pip install -r requirements.txt
 4.Run the app:
 python app.py
 
-## API Routes
-GET /items: Fetch all items.
-POST /items: Create a new item.
-GET /items/<int:id>: Fetch a specific item by ID.
-PUT /items/<int:id>: Update a specific item by ID.
-DELETE /items/<int:id>: Delete a specific item by ID.
+
